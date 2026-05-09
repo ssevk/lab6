@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Yeva Malakhova - Lab 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="cv-wrapper">
+        
+        <header class="main-header">
+            <h1>Yeva Malakhova</h1>
+            <p><span class="badge">Digital Artist</span></p>
+            <p>Email: <a href="mailto:yeva.malakhova.kb.2023@lpnu.ua">yeva.malakhova.kb.2023@lpnu.ua</a></p>
+        </header>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate Digital Artist currently expanding my horizons into the world of tech. 
+                    I believe that the intersection of imagination and digital security is the future of the web.
+                </p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li class="list-item">
+                        <strong>Lviv Polytechnic National University</strong>
+                        <br>Bachelor of Cybersecurity (In progress)
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <ul>
+                    <li class="list-item">
+                        <strong>Freelance Digital Artist</strong> (2025 — Present)
+                        <p>Creating high-quality digital illustrations, character designs, and concept art for international clients.</p>
+                    </li>
+                    <li class="list-item">
+                        <strong>Sales Manager</strong> (2024 — Present)
+                        <p>Assisted in managing company's sales activities.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Comments</h2>
+                <div id="comments-container"></div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li class="list-item"><strong>Art:</strong> 2D Illustration, Concept Art.</li>
+                    <li class="list-item"><strong>Tech:</strong> Cybersecurity Fundamentals; C, C++ and Python Fundamentals.</li>
+                    <li class="list-item"><strong>Languages:</strong> Ukrainian (Native), English (C1)</li>
+                </ul>
+            </section>
+        </main>
+
+        <div id="contact-modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" id="name" required placeholder="Name" style="display: block; width: 100%; margin-bottom: 10px; padding: 8px;">
+                    <input type="email" id="email" required placeholder="Email" style="display: block; width: 100%; margin-bottom: 10px; padding: 8px;">
+                    <textarea id="subject" placeholder="Subject" style="display: block; width: 100%; margin-bottom: 10px; padding: 8px; min-height: 50px;"></textarea>
+                    <textarea id="message" placeholder="Your message" style="display: block; width: 100%; margin-bottom: 10px; padding: 8px; min-height: 100px;"></textarea>
+                    <button type="submit" class="btn-send">Send</button>
+                    <button type="button" id="close-modal">Close</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Yeva Malakhova. Prepared for Laboratory Work №4.</p>
+            <p id="system-info" style="font-weight: bold; color: var(--primary);">Завантаження інформації про систему...</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
